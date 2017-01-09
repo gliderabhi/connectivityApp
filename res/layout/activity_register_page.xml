@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.anurag.rebel.customerappstart.RegisterPage">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="30dp"
+         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sevis" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rmaill"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    <EditText
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:drawableRight="@drawable/email"
+        android:id="@+id/rmail"
+
+        android:hint="Email" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpassl"
+        android:layout_below="@+id/rmaill"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rmaill"
+        android:layout_alignEnd="@+id/rmaill">
+
+    <EditText
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/domain"
+        android:ems="10"
+        android:id="@+id/rpass"
+        android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rphonel"
+        android:layout_below="@+id/rpassl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rpassl"
+        android:layout_alignEnd="@+id/rpassl">
+
+    <EditText
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:drawableRight="@drawable/cellphone"
+        android:id="@+id/rphone"
+        android:hint="Contact Number" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ruserl"
+        android:layout_below="@+id/rphonel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rphonel"
+        android:layout_alignEnd="@+id/rphonel">
+
+    <EditText
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:paddingTop="20dp"
+        android:drawableRight="@drawable/account"
+        android:id="@+id/ruser"
+        android:hint="Username"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:id="@+id/rbtn"
+        android:textStyle="italic"
+        android:onClick="CheckEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+
+</RelativeLayout>
